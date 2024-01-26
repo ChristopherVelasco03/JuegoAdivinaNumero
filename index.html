@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Adivina El Número</title>
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+
+  <body>
+    <h1>Adivina El Numero</h1>
+
+    <p>¡Vamos a jugar! Elige un numero del 1 al 100. Tienes 10 intentos para adivinarlo. Despues de cada intento, te diremos si estas demasiado alto o demasiado bajo. ¡Buena suerte y diviertete!</p>
+
+    <div class="form">
+      <label for="guessField">Introduzca un numero: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Enviar" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
